@@ -53,7 +53,7 @@ router.get("/") { request, response, next in
 }
 
 // Add an HTTP server and connect it to the router
-Kitura.addHTTPServer(onPort: 80, with: router)
+Kitura.addHTTPServer(onPort: port, with: router)
 
 // Start the Kitura runloop (this call never returns)
 Kitura.run()
